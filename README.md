@@ -7,3 +7,9 @@ Matéria da Escola de TI
 * Miguel Drozino
 * Mikaela
 * Nathan Rodrigues
+
+# Como utilizar:
+Clone o Repositório na sua IDE de preferência, e rode no terminal:
+```
+npm install
+```
