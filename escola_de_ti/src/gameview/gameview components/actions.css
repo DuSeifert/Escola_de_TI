@@ -1,0 +1,33 @@
+.agv-actions-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.agv-btn {
+  background-color: #c0c0c0;
+  color: #000;
+  border: 2px solid #fff;
+  border-right-color: #555;
+  border-bottom-color: #555;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+  transition: all 0.1s ease;
+}
+
+.agv-btn:active {
+  border: 2px solid #555;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  box-shadow: 0px 0px 0px #000;
+  transform: translate(2px, 2px);
+}
+
+.agv-btn-primary {
+  background-color: #ff4500;
+  color: #fff;
+}
