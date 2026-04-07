@@ -1,0 +1,74 @@
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-titles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    margin-left: 40px;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 8px 16px;
+    flex: 1;
+}
+
+.search-input-wrapper input {
+    background: none;
+    border: none;
+    color: #fff;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search-input-wrapper input::placeholder {
+    color: #aaa;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.btn-add-game {
+    background-color: #2b8a2b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-add-game:hover {
+    background-color: #237023;
+}
