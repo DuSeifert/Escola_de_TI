@@ -16,3 +16,10 @@ Matéria da Escola de TI
 * fix/BRANCH: Correção de X função;
 * bug/BRANCH: Correção de bug em X;
 * Add mais caso necessário
+
+
+# Como utilizar:
+Clone o Repositório na sua IDE de preferência, e rode no terminal:
+```
+npm install
+```

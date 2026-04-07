@@ -1,11 +1,12 @@
 
-import Sidebar from '../components/Sidebar'
+import Sidebar from './profile components/components/Sidebar'
 import Header from './profile components/Header'
 import Review_card from './profile components/Review-card'
 
 
 import './styles.css'
 
+// TODO: Consertar o CSS da página (usar FLEX para melhorar o tamanho dos componentes)
 
 export default function Profile(){
 
@@ -13,7 +14,9 @@ export default function Profile(){
         <>
 
             <div className='container'>
-                <Sidebar/>
+                
+                    <Sidebar />
+                
 
                 <div className='content'>
 
