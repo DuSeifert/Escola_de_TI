@@ -1,0 +1,9 @@
+.agv-container {
+  background-color: #0c0c0e;
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
