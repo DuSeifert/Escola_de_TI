@@ -1,0 +1,34 @@
+/* src/gameview/gameview components/sidebar.css */
+.agv-sidebar {
+  grid-area: sidebar;
+  border-left: 1px solid #333;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center;
+  gap: 2.5rem;
+  background-color: rgba(12, 12, 14, 0.9);
+}
+
+.agv-side-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #aaa;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.agv-side-link:hover {
+  color: #ff4500;
+}
+
+.agv-side-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+}
