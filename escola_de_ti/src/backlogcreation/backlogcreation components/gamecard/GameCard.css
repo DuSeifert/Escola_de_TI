@@ -1,0 +1,75 @@
+.game-card {
+    background-color: #d8d8d8;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.card-image-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.card-cover {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.btn-options {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.card-info {
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-platform {
+    background-color: #404040;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-review {
+    width: 100%;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-review:hover {
+    background-color: #333;
+}
