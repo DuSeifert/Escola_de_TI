@@ -5,7 +5,7 @@ Matéria da Escola de TI
 * Daniel Nardi
 * Ricardo Guilhen
 * Miguel Drozino
-* Mikaela
+* Micaela
 * Nathan Rodrigues
 
 

@@ -1,0 +1,156 @@
+.agv-details-container {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.agv-left-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.agv-cover-with-meta {
+  width: clamp(12rem, 20vw, 17.5rem);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.agv-cover {
+  aspect-ratio: 0.7;
+  background-color: #1a1a1a;
+  border: 3px solid #ff4500;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.agv-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* <- Isso faz o crop inteligente no centro */
+  object-position: center; /* Garante que o centro da imagem fique visível */
+}
+
+.agv-meta-below-cover {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-top: 1px dashed #333;
+  padding-top: 0.8rem;
+}
+
+.agv-meta-below-cover p { margin: 0; color: #aaa; font-size: 0.9rem; }
+
+.agv-info-block {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Novo layout interno da coluna da direita */
+.agv-title-text h1 { font-size: 2.8rem; margin: 0; color: #fff; text-transform: uppercase; }
+.agv-title-text span { color: #888; font-size: 1.2rem; margin-left: 1rem; }
+.agv-dev-text { color: #aaa; margin-bottom: 1.5rem; }
+
+/* Flexbox para Descrição e Ações ficarem lado a lado */
+.agv-desc-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.agv-description {
+  font-family: sans-serif;
+  color: #ccc;
+  line-height: 1.6;
+  max-width: 25rem; /* Isso "aperta" o texto e força a quebra de linha! */
+}
+
+.agv-actions-group-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens dentro do grupo de ações */
+  gap: 1.2rem;
+}
+
+.agv-action-icons-top {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.agv-icon-btn-msp {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:2rem;
+}
+.agv-icon-btn-msp:hover { color: #ff4500; }
+
+.agv-action-boxes-rect {
+  display: flex;
+  gap: 1rem;
+}
+
+.agv-rect-action-btn {
+  background: #222;
+  border: 1px solid #555;
+  color: #fff;
+  width: 5.5rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+.agv-rect-action-btn:hover { border-color: #fff; }
+
+.agv-highlight {
+  color: #ff4500; /* Laranja da identidade visual */
+  font-weight: bold;
+}
+
+.agv-title-text h1 span.agv-highlight {
+  font-size: 1.5rem; /* Ajuste do tamanho do ano ao lado do título */
+  margin-left: 1rem;
+}
+
+.agv-actions-group-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem; /* Espaço entre os ícones e os botões */
+}
+
+.agv-action-icons-top {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 1.2rem; /* Ícones MAIORES */
+}
+
+.agv-action-boxes-rect {
+  display: flex;
+  flex-direction: column; /* Coloca os botões um embaixo do outro */
+  gap: 0.5rem;
+}
+
+.agv-rect-action-btn {
+  background: #222;
+  border: 1px solid #555;
+  color: #fff;
+  width: 7rem; /* Deixei um pouquinho mais largo pra caber 'compartilhar' melhor */
+  height: 2.2rem; /* Mais fininhos já que estão empilhados */
+  font-size: 1rem;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+.agv-rect-action-btn:hover { border-color: #fff; }

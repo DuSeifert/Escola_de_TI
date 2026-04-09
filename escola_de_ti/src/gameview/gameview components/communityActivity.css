@@ -1,0 +1,61 @@
+/* src/gameview/gameview components/communityActivity.css */
+/* ... (as classes de contêiner continuam iguais) */
+.agv-community-container { display: flex; flex-direction: column; gap: 2rem; }
+.agv-community-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 2rem; }
+.agv-section-header { border-bottom: 1px solid #555; padding-bottom: 0.5rem; margin-bottom: 1rem; color: #aaa; text-transform: lowercase; }
+.agv-friend-reviews { display: flex; gap: 1rem; }
+.agv-friend-avatar { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+
+.agv-circle {
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden; /* Garante que a imagem fique redonda e não vaze */
+  background-color: #222; /* Cor de fundo caso não tenha imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agv-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz o crop direitinho */
+}
+
+.agv-mini-stars { 
+  font-size: 0.95rem; /* Era 0.7, agora está visivelmente maior */
+  color: #ff4500; 
+}
+.agv-article-covers { display: flex; gap: 1rem; }
+
+/* Capas de artigo maiores */
+.agv-article-box {
+  width: 5.5rem;
+  height: 7.5rem;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  overflow: hidden; /* Garante que a imagem não vaze das bordas */
+  position: relative;
+}
+
+.agv-article-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* <- Faz o crop */
+  object-position: center;
+  position: absolute; /* Opcional, mas ajuda no posicionamento */
+  top: 0;
+  left: 0;
+}
+
+.agv-top-review-item { display: flex; gap: 1rem; }
+.agv-review-content { flex: 1; background: #111; padding: 1rem; border: 1px solid #333; }
+.agv-review-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.8rem; }
+.agv-review-text { font-family: sans-serif; font-size: 0.9rem; color: #bbb; }

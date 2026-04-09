@@ -1,0 +1,51 @@
+/* src/gameview/styles.css */
+.agv-wrapper {
+  background-color: #0c0c0e;
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 7rem;
+  
+  /* MUDE AQUI: Diminuindo de 5.6rem para 4.2rem */
+  grid-template-rows: 4.2rem 1fr; 
+  
+  grid-template-areas: 
+    "nav nav"
+    "main sidebar";
+  overflow-x: hidden;
+}
+
+.agv-main-content {
+  grid-area: main;
+  position: relative;
+  padding: 0 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Isso é o que centraliza o conteúdo na tela */
+}
+
+.agv-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  /* Removemos o 'background' com a URL fixa e deixamos as configurações de tamanho aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.agv-content-layer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 65rem; /* Restringe o crescimento para não esticar demais em monitores ultrawide */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
