@@ -3,9 +3,9 @@ import Login from "./login/pages/Login";
 import Cadastro from "./login/pages/Cadastro";
 import GameView from "./gameview/GameView";
 import TelaReview from "./review/TelaReview";
-import DashboardLayout from "./dashboard/Dashboard";
 import Profile from "./profile/Profile";
 import BacklogCreation from "./backlogcreation/BacklogCreation";
+import DashboardLayout from "./dashboard/dashboard";
 
 function App() {
   return (
