@@ -1,0 +1,94 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0;
+  transition: width 0.3s ease;
+  z-index: 10;
+}
+.sidebar.expanded { width: 280px; }
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-toggle {
+  background: none; border: none; color: white;
+  cursor: pointer; transition: opacity 0.3s;
+  display: flex; align-items: center;
+}
+
+.nav-item {
+  display: flex; align-items: center; height: 40px;
+  text-decoration: none; color: white;
+  transition: opacity 0.3s; cursor: pointer;
+}
+
+.menu-toggle:hover, .nav-item:hover { 
+  opacity: 0.7; 
+}
+
+.icon-wrapper {
+  min-width: 80px; 
+  display: flex; justify-content: center; align-items: center;
+}
+.icon-wrapper svg {
+  width: 28px; height: 28px;
+}
+
+.nav-text {
+  font-size: 14px; font-weight: 700; letter-spacing: 1.5px;
+  white-space: nowrap; opacity: 0; display: none;
+  margin-left: 5px;
+}
+.sidebar.expanded .nav-text {
+  display: block; animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+.main-content {
+  flex: 1; padding: 40px; overflow-y: auto;
+}
+
+.header-logo {
+  font-size: 36px; font-style: italic; letter-spacing: 2px;
+  margin-bottom: 30px; font-weight: 400;
+}
+
+.grid-layout {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 30px;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #d9d9d9; border-radius: 16px;
+  transition: transform 0.3s; cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-large { height: 220px; }
+.card-medium { height: 120px; }
+.card-full { height: 180px; grid-column: 1 / -1; }
+
+@media (max-width: 768px) {
+  .grid-layout { grid-template-columns: 1fr; }
+  .sidebar.expanded { position: absolute; height: 100%; background-color: #4a4a4a; }
+  .main-content { padding: 20px; }
+}
